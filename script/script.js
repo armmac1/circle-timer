@@ -12,7 +12,6 @@ const setCircleProgress = (element, circumference, ratio) => {
 };
 
 const getMouseAng = ({ clientX, clientY }, center, offsetDeg) => {
-	// Inverting Y because browser calculating Y from top to bottom
 	const anchor = {
 		x: clientX - center.x,
 		y: (clientY - center.y) * 1,
