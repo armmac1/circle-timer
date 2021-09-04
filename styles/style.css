@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #0E121B;
+}
+
+#circular-timer {
+  width: 375px;
+  height: 812px;
+  background: #10141e;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.301);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.301);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+#circular-timer header, #circular-timer footer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#circular-timer header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#circular-timer header h2 {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#circular-timer section {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#circular-timer section svg {
+  width: 375px;
+  height: 375px;
+  -webkit-filter: drop-shadow(0 0 5px black);
+          filter: drop-shadow(0 0 5px black);
+  fill: none;
+}
+
+#circular-timer section svg .bg-circle,
+#circular-timer section svg #main-circle {
+  stroke: rgba(108, 117, 137, 0.3);
+  stroke-width: 40px;
+  stroke-dasharray: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+#circular-timer section svg .bg-circle {
+  -webkit-box-shadow: inset 0 0 10px #000000;
+          box-shadow: inset 0 0 10px #000000;
+}
+
+#circular-timer section svg #main-circle {
+  stroke: #00c3dd;
+  stroke-dashoffset: -600;
+  -webkit-filter: drop-shadow(0 0 15px rgba(0, 217, 246, 0.4));
+          filter: drop-shadow(0 0 15px rgba(0, 217, 246, 0.4));
+}
+
+#circular-timer section #time {
+  position: absolute;
+  font-size: 4em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=style.css.map */
